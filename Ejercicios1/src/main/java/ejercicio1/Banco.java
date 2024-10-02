@@ -55,6 +55,10 @@ public class Banco {
         }
     }
 
+    /**
+     * Pide un nombre al usuario para hacer referencia a él.(String)
+     * @param titular 
+     */
     public static void registrarse(String titular) {
         String nombre = "";
         System.out.println("Escribe tu nombre:");

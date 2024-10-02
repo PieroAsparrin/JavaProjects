@@ -106,10 +106,11 @@ public class Banco {
             } else {
                 if (fondos > retiro || fondos == retiro) {
                     fondos = fondos - retiro;
-                    Cuentausuario.setCantidad(retiro);
+                    Cuentausuario.setCantidad(fondos);
                 } else {
                     System.out.println("La cantidad a retirar es mayor al dinero almacenado en la cuenta, ingresa una cantidad menor o igual a tus fondos e intentalo nuevamente..");
                     fondos = fondos;
+                    Cuentausuario.setCantidad(fondos);
                 }
             }
         }
